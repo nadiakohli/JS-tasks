@@ -1,0 +1,26 @@
+{
+  "extends": "airbnb",
+  "globals": {
+    "window": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "env": {
+    "jest": true,
+    "browser": true
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-confusing-arrow": "off",
+    "arrow-parens": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/no-webpack-loader-syntax": "off",
+    "no-shadow": "off",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-useless-escape": "off",
+    "linebreak-style": "off"
+  }
+}
