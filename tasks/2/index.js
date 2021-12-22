@@ -2,7 +2,7 @@
 // be min, max and arithmetic mean of all objects in the array
 
 const getMinMaxAvg = (array) => {
-  // your code
+  
 };
 
 export default getMinMaxAvg;
