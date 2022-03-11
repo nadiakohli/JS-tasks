@@ -1,10 +1,8 @@
 // 19. Output reverse string
 
-const getReversedString = (string) => {
-  const splitString = string.split('');
-  const reverseArray = splitString.reverse();
-  const joinArray = reverseArray.join('');
-  return joinArray;
-};
+const getReversedString = (string) => string
+  .split('')
+  .reverse()
+  .join('');
 
 export default getReversedString;
