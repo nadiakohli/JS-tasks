@@ -7,6 +7,12 @@
 // ...
 // }
 
-const getCountLetters = (string) => {};
+const getCountLetters = (string) => string
+  .split('').reduce((acc, letter) => {
+    if (letter === ' ') return acc;
+    const modifiedLetter = letter.toLowerCase();
+    const count = acc[modifiedLetter] ? acc[modifiedLetter] + 1 : 1;
+    return { ...acc, [modifiedLetter]: count };
+  }, {});
 
 export default getCountLetters;
