@@ -1,7 +1,7 @@
 // 24. Return the string with the replaced values. Replace all vowels letters on 'b' letter
 
 const getString = (string) => {
-  const vowels = ['a', 'o', 'i', 'e', 'u'];
+  const vowels = ['a', 'o', 'i', 'e', 'u', 'y'];
   const letters = string.split('');
   const indexes = letters
     .reduce((acc, vowel, index) => vowels.includes(vowel) ? [...acc, index] : acc, []);
