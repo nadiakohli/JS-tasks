@@ -4,9 +4,9 @@
 const getNewArray = (array) => {
   // const firstSplice = [...[...array].splice(0, 2), ...[...array].splice(3)];
   // return [10, ...[...firstSplice].splice(0, 5), ...[...firstSplice].splice(8), 4];
-  const spliceArr1 = new Array(array.splice(0, 2));
-  const spliceArr2 = new Array(array.splice(1, array.length));
-  const concatedArrays = spliceArr1.concat(spliceArr2).flat();
+  const firstSplice = [...array].splice(0, 2);
+  const secondSplice = [...array].splice(3, array.length);
+  const concatedArrays = firstSplice.concat(secondSplice).flat();
   concatedArrays.splice(5, 3);
   concatedArrays.unshift(10);
   concatedArrays.push(4);
