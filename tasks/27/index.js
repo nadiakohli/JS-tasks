@@ -1,9 +1,9 @@
 // 27. Delete 2 elements from array which after second element
 
 const getNewArray = (array) => {
-  const spliceArr = new Array(...array);
-  spliceArr.splice(2, 2);
-  return spliceArr;
+  const spliceElements = [...array];
+  spliceElements.splice(2, 2);
+  return spliceElements;
 };
 
 export default getNewArray;
